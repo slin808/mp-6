@@ -12,6 +12,7 @@ const links = [
     name: 'Signin',
     href: '/signin',
   },
+
 ];
 
 const StyledLink = styled(Link)`
@@ -19,7 +20,7 @@ const StyledLink = styled(Link)`
   display: block;
   border-radius: 25%;
   width: 100%;
-  background-color: ${(props) => (props.theme.isActive ? `blue` : `burlywood`)};
+  background-color: ${(props) => (props.theme.isActive ? `red` : `burlywood`)};
 `;
 
 export default function NavLinks() {
