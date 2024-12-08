@@ -1,7 +1,6 @@
 "use client";
 
-import { SessionProvider } from 'next-auth/react';
-import { useSession, signOut } from 'next-auth/react';
+import { useSession, signOut, signIn } from 'next-auth/react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
@@ -40,14 +39,6 @@ const StyledSignin = styled.button`
 `;
 
 export default function Home() {
-  return (
-    <SessionProvider>
-      <PageContent />
-    </SessionProvider>
-  );
-}
-
-function PageContent() {
   const { data: session, status } = useSession();
 
   if (status === "loading") {
