@@ -27,7 +27,7 @@ export default function SignIn() {
   return (
     <StyledDiv>
       <StyledHeader>Sign In Page</StyledHeader>
-      <button onClick={() => signIn('github')}>Sign in using Github!</button>
+      <StyledButton onClick={() => signIn('github')}>Sign in using Github!</StyledButton>
     </StyledDiv>
   );
 }
