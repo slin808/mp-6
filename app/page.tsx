@@ -1,6 +1,6 @@
 "use client";
 
-import { useSession, signOut, signIn } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
 import styled from 'styled-components';
 
 const StyledDiv = styled.div`
